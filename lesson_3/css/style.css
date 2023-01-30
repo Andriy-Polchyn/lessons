@@ -1,0 +1,49 @@
+@import url("reset.css");
+
+h1 {
+   color: blue;
+}
+* {
+   color: goldenrod;
+}
+h4 {
+   color: blueviolet;
+}
+.description {
+   color: crimson;
+}
+#table-layout {
+   color: deeppink;
+}
+p.black {
+   color: black;
+}
+.tool-item.green {
+   color: green;
+}
+.first,
+.third,
+.fifth {
+   color: violet;
+}
+.tools p {
+   color: yellowgreen;
+}
+.section__text .brown {
+   color: brown;
+}
+.blue * {
+   color: lightskyblue;
+}
+.black > span {
+   color: mediumslateblue;
+}
+.tool-item ~ li {
+   color: darkgrey;
+}
+.fifth + li {
+   color: navy;
+}
+[class*="__title"] {
+   color: green;
+}
