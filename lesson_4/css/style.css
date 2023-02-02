@@ -1,0 +1,85 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;700&display=swap');
+
+body {
+   font-family: 'Lora', serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.1;
+   text-align: center;
+}
+
+h1 {
+   font-family: 'Alegreya Sans', sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 3;
+   color: lightslategrey;
+   text-shadow: 2px 2px 5px lightslategrey;
+}
+
+h2 {
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 2;
+   color: lightslategrey;
+   text-shadow: 2px 2px 5px lightslategrey;
+}
+
+h4 {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 26px;
+   font-weight: 500;
+}
+
+.summary__items h4 {
+   font-family: 'Arsenal', serif;
+   font-size: 24px;
+   font-weight: 700;
+   text-decoration: underline;
+   color: lightskyblue;
+   text-align: left;
+   line-height: 1.5;
+   text-shadow: 1px 1px 2px lightskyblue;
+}
+
+h3 {
+   font-family: 'Bitter', serif;
+   font-size: 36px;
+   font-weight: 700;
+   color: lightslategrey;
+   text-shadow: 2px 2px 5px lightslategrey;
+   line-height: 3;
+}
+
+.content__item p {
+   text-align: justify;
+   line-height: 1.1;
+   text-indent: 30px;
+}
+
+.image__title p {
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 3;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   word-spacing: 7px;
+}
+
+.read-list h5 {
+   font-family: 'Arsenal', serif;
+   font-size: 20px;
+   font-weight: 400;
+   text-decoration: underline;
+   color: lightskyblue;
+   text-align: left;
+   line-height: 1.5;
+   text-shadow: 1px 1px 2px lightskyblue;
+}
