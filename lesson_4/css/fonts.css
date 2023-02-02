@@ -1,7 +1,7 @@
 @font-face {
    font-family: 'Arsenal';
-   src: url('Arsenal-Bold.woff2') format('woff2'),
-       url('Arsenal-Bold.woff') format('woff');
+   src: url('../fonts/Arsenal-Bold.woff2') format('woff2'),
+       url('../fonts/Arsenal-Bold.woff') format('woff');
    font-weight: bold;
    font-style: normal;
    font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
    font-family: 'Arsenal';
-   src: url('Arsenal-Regular.woff2') format('woff2'),
-       url('Arsenal-Regular.woff') format('woff');
+   src: url('../fonts/Arsenal-Regular.woff2') format('woff2'),
+       url('../fonts/Arsenal-Regular.woff') format('woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
    font-family: 'Bitter';
-   src: url('Bitter-Regular.woff2') format('woff2'),
-       url('Bitter-Regular.woff') format('woff');
+   src: url('../fonts/Bitter-Regular.woff2') format('woff2'),
+       url('../fonts/Bitter-Regular.woff') format('woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
    font-family: 'Bitter';
-   src: url('Bitter-Light.woff2') format('woff2'),
-       url('Bitter-Light.woff') format('woff');
+   src: url('../fonts/Bitter-Light.woff2') format('woff2'),
+       url('../fonts/Bitter-Light.woff') format('woff');
    font-weight: 300;
    font-style: normal;
    font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
    font-family: 'Bitter';
-   src: url('Bitter-Bold.woff2') format('woff2'),
-       url('Bitter-Bold.woff') format('woff');
+   src: url('../fonts/Bitter-Bold.woff2') format('woff2'),
+       url('../fonts/Bitter-Bold.woff') format('woff');
    font-weight: bold;
    font-style: normal;
    font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
    font-family: 'Comfortaa';
-   src: url('Comfortaa-Light.woff2') format('woff2'),
-       url('Comfortaa-Light.woff') format('woff');
+   src: url('../fonts/Comfortaa-Light.woff2') format('woff2'),
+       url('../fonts/Comfortaa-Light.woff') format('woff');
    font-weight: 300;
    font-style: normal;
    font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
    font-family: 'Comfortaa';
-   src: url('Comfortaa-Bold.woff2') format('woff2'),
-       url('Comfortaa-Bold.woff') format('woff');
+   src: url('../fonts/Comfortaa-Bold.woff2') format('woff2'),
+       url('../fonts/Comfortaa-Bold.woff') format('woff');
    font-weight: bold;
    font-style: normal;
    font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
    font-family: 'Comfortaa';
-   src: url('Comfortaa-Regular.woff2') format('woff2'),
-       url('Comfortaa-Regular.woff') format('woff');
+   src: url('../fonts/Comfortaa-Regular.woff2') format('woff2'),
+       url('../fonts/Comfortaa-Regular.woff') format('woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
