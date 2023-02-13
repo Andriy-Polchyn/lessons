@@ -1,0 +1,315 @@
+
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 1.79;
+   color: #6C757D;
+}
+
+.article {
+   padding: 80px 0;
+}
+
+.article__container {
+   max-width: 1270px;
+   margin: 0 auto 100px;
+   padding: 0 15px;
+}
+
+.image__full {
+   display: block;
+   max-width: 100%;
+   margin: 0 auto 100px;
+}
+
+.text__container {
+   max-width: 816px;
+   margin: 0 auto 80px;
+}
+
+.image__block {
+   margin-bottom: 80px;
+}
+
+.text__title {
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 1.6;
+   color: #212529;
+   max-width: 70%;
+   margin-bottom: 40px;
+}
+
+.text__content p {
+   margin-bottom: 30px;
+}
+
+.bigger__margin {
+   margin-bottom: 100px;
+}
+
+.image {
+   max-width: 100%;
+}
+
+.images {
+   font-size: 0;
+}
+
+.image__small {
+   max-width: 50%;
+   font-size: 14px;
+}
+
+.left { 
+   padding-right: 15px;
+}
+
+.right {
+   padding-left: 15px;
+}
+
+.last {
+   margin-bottom: 0;
+}
+
+/* ----Відпрацювання вивчених властивостей ------ */
+
+.article__container-css {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px 80px;
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.6;
+   color: #212529;
+   margin-bottom: 40px;
+}
+
+h4 {
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 1.6;
+   color: #212529;
+   margin-bottom: 20px;
+}
+
+/* ---- Border ----*/
+.border {
+   margin-bottom: 30px;
+}
+
+.border__text {
+   width: 30%;
+   padding: 15px;
+   margin-bottom: 30px;
+   border-top: 5px solid;
+   border-right: 7px dotted red;
+   border-bottom: 10px dashed blue;
+   border-left: 12px double yellow;
+}
+
+.inline-box {
+   width: 30%;
+   margin-bottom: 30px;
+}
+
+.border__text-inline {
+   border: 3px solid green;
+}
+
+.link {
+   border-bottom: 3px dotted blue;
+   font-size: 20px;
+}
+
+/* ---- Outline ----*/
+
+.outline {
+   margin-bottom: 30px;
+}
+
+.outline__text {
+   width: 30%;
+   padding: 15px;
+   outline: 5px dotted orangered;
+   border: 1px solid #000;
+}
+
+.outline__inline-box {
+   width: 30%;
+   margin-bottom: 8px;
+}
+
+.outline__text-inline {
+   outline: 15px solid lightseagreen;
+   border: 1px solid #000;
+}
+
+.outline__link:hover {
+   outline: 20px solid yellow;   
+}
+
+/* ---- Border-radius ----*/
+
+.border-radius {
+   margin-bottom: 30px;
+}
+
+.border-radius__text {
+   width: 30%;
+   padding: 15px;
+   border: 1px solid #000;
+   background-color: lightgreen;
+   border-radius: 20px 30px 40px 50px;
+   margin-bottom: 30px;
+}
+
+.border-radius__inline-box {
+   width: 30%;
+   margin-bottom: 30px;
+}
+
+.border-radius__text-inline {
+   border: 1px solid #000;
+   background-color: lightgreen;
+   border-radius: 20px 30px 40px 50px;
+}
+
+.border-radius__img {
+   width: 300px;
+   border-radius: 50%;
+   border: 10px double aqua;
+}
+
+/* ---- Box-shadow ----*/
+
+.box-shadow {
+   margin-bottom: 50px;
+}
+
+.box-shadow__text {
+   width: 30%;
+   padding: 15px;
+   border: 8px solid yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+   margin-bottom: 50px;
+}
+
+.box-shadow__text-1 {
+   width: 30%;
+   padding: 15px;
+   border: 8px solid yellow;
+   box-shadow: inset 5px 5px 50px 5px blue;
+   margin-bottom: 30px;
+}
+
+.box-shadow__inline-box {
+   width: 30%;
+   margin-bottom: 50px;
+}
+
+.box-shadow__text-inline {
+   border: 8px solid yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+}
+
+.box-shadow__img {
+   width: 300px;
+   border-radius: 50%;
+   border: 10px double yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+}
+
+/* ---- Opacity ----*/
+
+.opacity {
+   margin-bottom: 50px;
+   opacity: 0.5;
+}
+.opacity__text {
+   width: 30%;
+   padding: 15px;
+   border: 8px solid yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+   margin-bottom: 50px;
+   background-color: aqua;
+}
+
+.opacity__inline-box {
+   width: 30%;
+   margin-bottom: 50px;
+}
+
+.opacity__text-inline {
+   border: 8px solid yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+   background-color: lightseagreen;
+}
+
+.opacity__img {
+   width: 300px;
+   border-radius: 50%;
+   border: 10px double yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+}
+
+/* ---- Visibility ----*/
+
+.visibility h4 {
+   width: 50%;
+}
+
+.text {
+   width: 30%;
+   padding: 15px;
+   border: 8px solid yellow;
+   box-shadow: 10px 10px 30px 10px blue;
+   margin-bottom: 60px;
+}
+
+.text a {
+   background-color: aquamarine;
+}
+
+.visibility__text:hover {
+   visibility: hidden;
+}
+
+.display__text:hover {
+   display: none;
+}
+
+.opacity-0__text:hover {
+   opacity: 0;
+}
+
+/* ---- Example with shadow ----*/
+
+.button {
+   display: inline-block;
+   padding: 10px 30px;
+   background-color: palevioletred;
+   color: #000;
+   border-radius: 20px;
+   border: 3px solid yellow;
+   box-shadow: 5px 5px 0 0 #000;
+   position: relative;
+   top: 0;
+   left: 0;
+   transition: all 0.3s;
+}
+
+.button:hover {
+   top: 3px;
+   left: 3px;
+   box-shadow: 1px 1px 0 0 #000;
+}
