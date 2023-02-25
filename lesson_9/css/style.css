@@ -1,0 +1,178 @@
+
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   color: #000;
+   font-weight: 300;
+}
+
+.content__container {
+   max-width: 1200px;
+   margin: 0 auto 50px;
+   padding: 50px 15px;
+}
+
+.content__container:last-child {
+   margin-bottom: 0;
+}
+
+.header-item {
+   display: inline-block;
+}
+
+.logo {
+   background-color: #3056D3;
+   height: 100px;
+   width: 260px;
+   vertical-align: middle;
+}
+
+.logo img {
+   margin-top: 20px;
+   margin-left: 25px;
+   max-width: 100%;
+}
+
+.header-phone {
+   background-color: #3056D3;
+   height: 45px;
+   width: 45px;
+   border-radius: 50%;
+   vertical-align: middle;
+}
+
+.header-phone img {
+   margin-top: 12px;
+   margin-left: 12px;
+   max-width: 100%;
+}
+
+.bg__container img {
+   display: block;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+[class*="-block"] {
+   padding: 20px 0 20px;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.img-section {
+   margin-bottom: 20px;
+}
+
+.img-section img {
+   max-width: 100%;
+}
+
+.design-section-about {
+   height: 150px;
+   background: url("../img/about/svg/Dotted Shape.svg") center no-repeat;
+}
+
+.description {
+   margin-bottom: 30px;
+}
+
+.service-block {
+   background-color: #F4F7FF;
+}
+
+.team-block {
+   background-color: lightgrey;
+}
+
+.design-section-team {
+   height: 150px;
+   background: url("../img/team/bg\ &\ shapes.svg") center no-repeat;
+}
+
+.design-section-price {
+   width: 370px;
+   height: 604px;
+   margin: 0 auto 20px;
+   background: url("../img/price/single\ pricing.svg") center no-repeat;
+}
+
+.clients-block {
+   padding: 60px;
+   background: url("../img/clients/icons/Dotted\ Shape.svg") 1% 5% no-repeat, url("../img/clients/icons/Dotted\ Shape.svg") 99% 95% no-repeat #3056D3;
+}
+
+.clients-icons-description {
+   color: #ffffff;
+   display: inline-block;
+   max-width: 50%;
+}
+
+.clients-icons-description img {
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.testimonials-block {
+   background: url("../img/testimonials/icons/Group\ 1000001862.svg") 50% 25% no-repeat, url("../img/testimonials/icons/Dotted\ Shape.svg") left bottom no-repeat, url("../img/testimonials/icons/shape.svg") right top no-repeat #F4F7FF;
+   padding: 50px 0;
+}
+
+.testimonials-block img {
+   max-width: 100%;
+}
+
+.blog-block img {
+   max-width: 100%;
+}
+
+.contact-item {
+   height: 130px;
+   width: 130px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.mail {
+   background: url("../img/contacts/icons/mail.svg") center no-repeat #F7F8FA;
+}
+
+.phone {
+   background: url("../img/contacts/icons/phone.svg") center no-repeat #F7F8FA;
+}
+
+.adress {
+   background: url("../img/contacts/icons/adress.svg") center no-repeat #F7F8FA;
+}
+
+.footer-item {
+   display: inline-block;
+   margin-right: 15px;
+}
+
+.footer-item:last-child {
+   margin-right: 0;
+}
+
+.footer-logo {
+   vertical-align: middle;
+}
+
+.footer-text {
+   max-width: 60%;
+   text-align: center;
+}
+
+.footer-mail {
+   width: 48px;
+   height: 48px;
+   background-color: #3056D3;
+}
+
+.footer-mail img {
+   margin-top: 17px;
+   margin-left: 14px;
+}
