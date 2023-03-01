@@ -1,0 +1,11 @@
+
+@import url("reset.css");
+
+body {
+   padding: 50px;
+}
+
+footer {
+   background-color: #212529;
+   color: #F8F9FA;
+}
