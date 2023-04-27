@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <div class="form">
+                <div class="form__container">
+                    <div class="form__section lesson-form">
+                        <h2 class="lesson-form__title">Form from lesson</h2>
+                        <form action="https://jsonplaceholder.typicode.com/posts" class="lesson-form__form"
+                            method="POST">
+                            <div class="lesson-form__line name-form">
+                                <input type="text" name="name-form" autocomplete="off"
+                                    placeholder="Enter your form name" maxlength="10">
+                            </div>
+                            <div class="lesson-form__line name required">
+                                <label class="label-input" for="name-01">Enter your name</label>
+                                <input type="text" id="name-01" name="Name" autocomplete="off" maxlength="12"
+                                    minlength="3" required>
+                            </div>
+                            <div class="lesson-form__line position">
+                                <label class="label-input" for="position-01">Enter your position</label>
+                                <input type="text" id="position-01" name="Position" autocomplete="off" maxlength="12"
+                                    value="worker" disabled>
+                            </div>
+                            <div class="lesson-form__line email required">
+                                <label class="label-input" for="email-01">Enter your email</label>
+                                <input type="email" id="email-01" name="Email" autocomplete="off" required>
+                            </div>
+                            <div class="lesson-form__line phone required">
+                                <label class="label-input" for="phone-01">Enter your phone</label>
+                                <input type="phone" id="phone-01" name="phone" autocomplete="off" required>
+                            </div>
+                            <div class="lesson-form__line login required">
+                                <label class="label-input" for="login-01">Enter your login</label>
+                                <input type="text" id="login-01" name="login" autocomplete="off" maxlength="12"
+                                    minlength="3" required>
+                            </div>
+                            <div class="lesson-form__line password required">
+                                <label class="label-input" for="password-01">Enter your password</label>
+                                <input type="password" id="password-01" name="password" autocomplete="off"
+                                    maxlength="12" minlength="3" required>
+                            </div>
+                            <div class="lesson-form__line age required">
+                                <label class="label-input" for="age-01">Enter your age</label>
+                                <input type="number" id="age-01" name="age" autocomplete="off" maxlength="2"
+                                    minlength="2" required>
+                            </div>
+                            <div class="lesson-form__line date required">
+                                <label class="label-input" for="date-01">Enter your date of birth</label>
+                                <input type="date" id="date-01" name="date" autocomplete="off" required>
+                            </div>
+                            <div class="lesson-form__line salary">
+                                <label class="label-input" for="salary-01">Enter your salary (1000-5000)</label>
+                                <input type="range" id="salary-01" name="salary" autocomplete="off" min="1000"
+                                    max="5000">
+                            </div>
+                            <div class="lesson-form__line color">
+                                <label class="label-input" for="color-01">Enter your favorite color</label>
+                                <input type="color" id="color-01" name="color" autocomplete="off" value="#0000ff">
+                            </div>
+                            <div class="lesson-form__line work">
+                                <div class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" autocomplete="off" id="work-01"
+                                        value="yes" name="work">
+                                    <label class="checkbox__label" for="work-01">Do you want to work in our company
+                                        ?</label>
+                                </div>
+                            </div>
+                            <div class="lesson-form__line division">
+                                <div class="division__title required">In which division you want to work ?</div>
+                                <div class="radio__division">
+                                    <input class="radio__input" type="radio" id="division-01" name="division"
+                                        value="design" autocomplete="off">
+                                    <label class="radio__label" for="division-01">Design</label>
+                                </div>
+                                <div class="radio__division">
+                                    <input class="radio__input" type="radio" id="division-02" name="division"
+                                        value="project" autocomplete="off">
+                                    <label class="radio__label" for="division-02">Project</label>
+                                </div>
+                                <div class="radio__division">
+                                    <input class="radio__input" type="radio" id="division-03" name="division"
+                                        value="produce" autocomplete="off">
+                                    <label class="radio__label" for="division-03">Produce</label>
+                                </div>
+                            </div>
+                            <div class="lesson-form__line cv required">
+                                <label class="label-input" for="cv-01">Download your cv (.pdf)</label>
+                                <input type="file" id="cv-01" name="file" accept=".pdf">
+                            </div>
+                            <div class="lesson-form__line message">
+                                <textarea name="message" autocomplete="off"
+                                    class="message__lesson">Why do you want to work in our company ?</textarea>
+                            </div>
+                            <div class="lesson-form__line list-lesson">
+                                <label class="label-input" for="hours-01">Choose your working hours</label>
+                                <select id="hours-01" name="working-hours" class="list-lesson__hours">
+                                    <option value="8-12">8-12 morning</option>
+                                    <option value="12-16" selected>12-16 afternoon</option>
+                                    <option value="16-20">16-20 evening</option>
+                                    <option value="20-24">20-24 night</option>
+                                </select>
+                            </div>
+                            <div class="lesson-form__button">
+                                <button type="submit" class="lesson-form__button">Send info</button>
+                            </div>
+                            <div class="lesson-form__button">
+                                <button type="reset" class="lesson-form__button">Clear form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="billing">
+                <div class="billing__container">
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="billing__section" method="post">
+                        <h3 class="billing__title">Billing Details</h3>
+                        <div class="billing__form">
+                            <div class="billing__item">
+                                <input class="billing__input" type="text" name="first-name" placeholder="First name*"
+                                    required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input type="text" class="billing__input" name="last-name" placeholder="Last name*"
+                                    required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input type="text" class="billing__input" name="address" placeholder="Address*" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input type="text" class="billing__input" name="address-line-2"
+                                    placeholder="Address line 2" required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <select class="billing__input" name="country" required>
+                                    <option value="" selected disabled>Country*</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Great Britain">Great Britain</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <div class="billing__item">
+                                <input class="billing__input" type="text" name="city-town" placeholder="City/Town*"
+                                    required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input class="billing__input" type="number" name="postcode-zip"
+                                    placeholder="Postcode / ZIP*" required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input class="billing__input" type="tel" name="phone" placeholder="Phone*" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input class="billing__input" type="number" name="postcode-zip"
+                                    placeholder="Postcode / ZIP*" required autocomplete="off">
+                            </div>
+                            <div class="billing__item">
+                                <input class="billing__input" type="tel" name="phone" placeholder="Phone*" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="billing__text-area">
+                                <textarea class="billing__input" name="additional-info" autocomplete="off"
+                                    placeholder="Additional information"></textarea>
+                            </div>
+                        </div>
+                        <div class="billing__checkbox checkbox">
+                            <div class="checkbox__item">
+                                <input type="checkbox" class="checkbox__check" autocomplete="off" name="account"
+                                    id="account-check" checked value="yes">
+                                <label for="account-check" class="checkbox__title">Create Account</label>
+                            </div>
+                            <div class="checkbox__item">
+                                <input type="checkbox" class="checkbox__check" autocomplete="off" name="ship"
+                                    id="ship-to" value="yes">
+                                <label for="ship-to" class="checkbox__title">Ship to a different address?</label>
+                            </div>
+                        </div>
+                        <div class="billing__coupon coupon">
+                            <h4 class="coupon__title">Apply Coupon to get discount!</h4>
+                            <div class="coupon__form">
+                                <input type="number" name="coupon-code" placeholder="Coupon code" autocomplete="off"
+                                    class="coupon__code billing__input">
+                                <button type="submit" class="coupon__button">Apply Code</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="shipping">
+                <div class="shipping__container">
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="shipping__block" method="post">
+                        <h3 class="shipping__title title-address">Shipping Address</h3>
+                        <div class="shipping__authorization">
+                            <div class="shipping__item required">
+                                <label for="e-mail" class="shipping__label">Email Address </label>
+                                <input type="email" id="e-mail" class="shipping__input"
+                                    placeholder="roni_cost@example.com" required autocomplete="off" name="e-mail">
+                            </div>
+                            <div class="shipping__item">
+                                <label for="password" class="shipping__label">Password</label>
+                                <input type="password" id="password" class="shipping__input"
+                                    placeholder="******************" autocomplete="off" name="password">
+                            </div>
+                            <div class="shipping__item">
+                                <label for="postal-code" class="shipping__label">Zip/Postal Code</label>
+                                <input type="number" id="postal-code" class="shipping__input" autocomplete="off"
+                                    name="postal-code">
+                            </div>
+                            <div class="shipping__text">You already have an account with us. Sign in or continue as
+                                guest.</div>
+                            <div class="shipping__login">
+                                <button type="submit" class="shipping__button">login</button>
+                                <a href="#" class="shipping__link">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="shipping__block" method="post">
+                        <div class="shipping__form">
+                            <div class="shipping__item required">
+                                <label for="first-name" class="shipping__label">First Name</label>
+                                <input type="text" id="first-name" class="shipping__input" required autocomplete="off"
+                                    name="first-name">
+                            </div>
+                            <div class="shipping__item required">
+                                <label for="last-name" class="shipping__label">Last Name</label>
+                                <input type="text" id="last-name" class="shipping__input" required autocomplete="off"
+                                    name="last-name">
+                            </div>
+                            <div class="shipping__item">
+                                <label for="company" class="shipping__label">Company</label>
+                                <input type="text" id="company" class="shipping__input" autocomplete="off"
+                                    name="company">
+                            </div>
+                            <div class="shipping__item required">
+                                <label for="street-address" class="shipping__label">Street Address</label>
+                                <input type="text" id="street-address" class="shipping__input" autocomplete="off"
+                                    required name="street-address">
+                            </div>
+                            <div class="shipping__item additional">
+                                <input type=" text" class="shipping__input" autocomplete="off" name="street-address">
+                            </div>
+                            <div class="shipping__item additional">
+                                <input type=" text" class="shipping__input" autocomplete="off" name="street-address">
+                            </div>
+                            <div class="shipping__item required">
+                                <label for="country" class="shipping__label">Country</label>
+                                <input type="text" id="country" class="shipping__input" required autocomplete="off"
+                                    name="country">
+                            </div>
+                            <div class="shipping__item required">
+                                <label for="state-province" class="shipping__label">State/Province</label>
+                                <select class="shipping__input" name="state-province" id="state-province" required
+                                    autocomplete="off">
+                                    <option value="" selected disabled>Please select a region, state or province
+                                    </option>
+                                    <option value="Kyiv">Kyiv</option>
+                                    <option value="Lviv">Lviv</option>
+                                    <option value="Odesa">Odesa</option>
+                                    <option value="Donetsk">Donetsk</option>
+                                    <option value="Sevastopol">Sevastopol</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="shipping__title title-methods">Shipping Methods</h3>
+                        <div class="shipping__methods methods">
+                            <div class="methods__item">
+                                <div class="methods__radio radio-method">
+                                    <input class="radio-method__input" type="radio" id="fixed" name="shipping-method"
+                                        value="fixed" autocomplete="off" checked>
+                                    <label class="radio-method__label" for="fixed">$5.00</label>
+                                </div>
+                                <div class="methods__type">Fixed</div>
+                                <div class="methods__description">Flat Rate</div>
+                            </div>
+                            <div class="methods__item">
+                                <div class="methods__radio radio-method">
+                                    <input class="radio-method__input" type="radio" id="table-rate"
+                                        name="shipping-method" value="table-rate" autocomplete="off">
+                                    <label class="radio-method__label" for="table-rate">$10.00</label>
+                                </div>
+                                <div class="methods__type">Table Rate</div>
+                                <div class="methods__description">Best Way</div>
+                            </div>
+                        </div>
+                        <div class="shipping__accept">
+                            <button type="submit" class="shipping__button">next</button>
+                            <a href="#" class="shipping__page-back">back</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
