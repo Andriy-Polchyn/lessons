@@ -1,0 +1,600 @@
+@import url("reset.css");
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+
+body {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #637381;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+[class*="__container"] {
+   max-width: 730px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+[class*="__section"] {
+   margin-bottom: 60px;
+}
+
+.required label:after {
+   content: "*";
+   color: red;
+}
+
+/* ----------- BILLING ----------- */
+
+.billing__title {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.25;
+   color: #212B36;
+   padding-top: 50px;
+   margin-bottom: 30px;
+}
+
+.billing__form {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 30px;
+   column-gap: 15px;
+}
+
+.billing__form:not(:last-child) {
+   margin-bottom: 35px;
+}
+
+.billing__item {
+   flex: 0 0 336px;
+}
+
+.billing__text-area {
+   flex-basis: 100%;
+}
+
+.billing__text-area textarea {
+   resize: vertical;
+   min-height: 180px;
+}
+
+.billing__input {
+   padding: 15px 0 15px 25px;
+   border: 1px solid #E7E7E7;
+   border-radius: 7px;
+   width: 100%;
+}
+
+.billing__input:focus {
+   outline: 1px solid #3056D3;
+}
+
+.billing__item select{
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   color:inherit;
+}
+
+.billing__checkbox:not(:last-child) {
+   margin-bottom: 55px;
+}
+
+.checkbox__item:not(:last-child) {
+   margin-bottom: 25px;
+} 
+
+.checkbox__input {
+   position: relative;
+}
+
+.checkbox__check {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.checkbox__check:focus-visible + .checkbox__title {
+   outline: 1px solid #3056D3;
+   border-radius: 5px;
+}
+
+.checkbox__check:checked + .checkbox__title::before {
+   background: url("../img/icons/checked.svg") center center no-repeat;
+}
+
+.checkbox__title {
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: 14px;
+}
+
+.checkbox__title::before {
+   content: "";
+   flex: 0 0 22px;
+   width: 22px;
+   height: 22px;
+   border-radius: 4px;
+   border: 0.7px solid #E7E7E7;
+}
+
+.coupon__title {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.3;
+   color: #212B36;
+}
+
+.coupon__title:not(:last-child) {
+   margin-bottom: 25px;
+}
+
+.coupon__form {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 20px;
+}
+
+.coupon__code {
+   flex: 0 0 325px;
+}
+
+.coupon__button {
+   padding: 12px 22px;
+   font-weight: 600;
+   background-color: #212B36;
+   color: #fff;
+   border-radius: 7px;
+   transition: all 0.3s;
+}
+
+.coupon__button:hover {
+   background-color: #fff;
+   color: #212B36;
+   outline: 1px solid #212B36;
+}
+
+/* ----------- SHIPPING ----------- */
+
+.shipping__container {
+   max-width: 636px;
+   margin: 0 auto;
+   padding: 0 15px 30px 15px;
+}
+
+.shipping__block {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.25;
+   color: #3F3F3F;
+}
+
+.shipping__block:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.shipping__title {
+   font-family: 'Oswald', sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 2.8;
+   color: #000;
+}
+
+.title-address {
+   margin-bottom: 34px;
+}
+
+.shipping__authorization {
+   display: flex;
+   flex-direction: column;
+   row-gap: 25px;
+}
+
+.shipping__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+}
+
+.shipping__label {
+   padding-top: 7px;
+}
+
+.shipping__input {
+   flex: 0 0 451px;
+   padding: 15px;
+   border: 1px solid #C4C4C4;
+}
+
+.shipping__input::placeholder {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.25;
+   color: #3F3F3F;
+}
+
+.shipping__input:focus {
+   outline: 1px solid #3056D3;
+}
+
+.shipping__text {
+   font-size: 14px;
+   line-height: 1.4;
+   color: #828282;
+   margin-top: -11px;
+}
+
+.shipping__login {
+   display: flex;
+   column-gap: 25px;
+}
+
+.shipping__button {
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #fff;
+   padding: 15px 42px;
+   background-color: #000;
+   transition: all 0.3s;
+}
+
+.shipping__button:hover {
+   background-color: #fff;
+   color: #000;
+   outline: 1px solid #000;
+}
+
+.shipping__link {
+   color: #0F6DB1;
+   align-self: center;
+   transition: all 0.3s;
+}
+
+.shipping__link:hover {
+   color: #000;
+}
+
+.shipping__login {
+   padding-bottom: 36px;
+   border-bottom: 1px solid #C4C4C4;
+}
+
+.shipping__form {
+   display: flex;
+   flex-direction: column;
+   row-gap: 24px;
+}
+
+.shipping__form:not(:last-child) {
+   margin-bottom: 46px;
+}
+
+.additional {
+   justify-content: flex-end;
+}
+
+.shipping__item select{
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   color:inherit;
+}
+
+.title-methods {
+   padding-bottom: 40px;
+   border-bottom: 1px solid #C4C4C4;
+}
+
+.shipping__methods:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.methods__item {
+   display: flex;
+   padding: 15px 0;
+   gap: 65px;
+   width: 443px;
+}
+
+.methods__item:not(:last-child) {
+   border-bottom: 1px solid #C4C4C4;
+}
+
+.methods__radio {
+   position: relative;
+   flex: 0 0 120px;
+}
+
+.radio-method__label {
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: 13px;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.4;
+   color: #828282;
+}
+
+.radio-method__label::before {
+   content: "";
+   flex: 0 0 10px;
+   width: 10px;
+   height: 10px;
+   border: 1px solid #828282;
+   border-radius: 50%;
+   right: 13px;
+}
+
+.radio-method__input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.radio-method__input:focus-visible + .radio-method__label {
+   outline: 1px solid #3056D3;
+}
+
+.radio-method__input:checked + .radio-method__label::before {
+   border: 3px solid #000;
+}
+
+.radio-method__input:checked + .radio-method__label {
+   color: #000;
+}
+
+.methods__type {
+   flex: 0 0 70px;
+   font-size: 14px;
+   line-height: 1.4;
+}
+
+.methods__description {
+   font-size: 14px;
+   line-height: 1.4;
+   flex: 0 0 60px;
+}
+
+.shipping__accept {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.shipping__page-back {
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #828282;
+   text-transform: uppercase;
+   transition: all 0.3s;
+}
+
+.shipping__page-back:hover {
+   color: #0F6DB1;
+   text-decoration: underline;
+}
+
+@media (max-width: 716px) {
+   .billing__form {
+      justify-content: center;
+   }
+
+   .billing__title {
+      text-align: center;
+   }
+
+   .billing__text-area {
+      flex: 0 0 336px;
+   }
+
+   .checkbox__item {
+      max-width: 50%;
+      margin: 0 auto;
+   }
+
+   .coupon__title {
+      text-align: center;
+   }
+
+   .coupon__form {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 660px) {
+   .shipping__input {
+      flex: 0 0 300px;
+   }
+
+   .shipping__authorization {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+
+   .shipping__title {
+      text-align: center;
+   }
+
+   .title-address {
+      margin-bottom: 25px;
+   }
+
+   .shipping__form {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+   
+   .shipping__item select {
+      font-size: 14px;
+   }
+
+   .shipping__methods {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+
+   .methods__item {
+      width: 100%;
+   }
+
+   .title-methods {
+      padding-bottom: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+   }
+
+   .shipping__accept {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 508px) {
+   .coupon__form {
+      row-gap: 10px;
+   }
+
+   .billing__title {
+      font-size: 18px;
+      padding-top: 30px;
+      margin-bottom: 20px;
+   }
+
+   .billing__form:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   .billing__form {
+      row-gap: 20px;
+   }
+
+   .checkbox__item:not(:last-child) {
+      margin-bottom: 15px;
+   }
+
+   .billing__checkbox:not(:last-child) {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 460px) {
+
+   .shipping__item label {
+      font-size: 14px;
+   }
+
+   .shipping__input {
+      padding: 5px;
+   }
+   
+   .shipping__input {
+      flex: 0 0 170px;
+   }
+
+   .shipping__authorization {
+      max-width: 300px;
+      margin: 0 auto;
+   }
+
+   .title-address {
+      margin-bottom: 15px;
+   }
+
+   .shipping__form {
+      max-width: 300px;
+   }
+   
+   .shipping__item select {
+      font-size: 10px;
+   }
+
+   .stretch {
+      align-self: stretch;
+   }
+
+   .shipping__methods {
+   
+   }
+
+   .title-methods {
+      max-width: 300px;
+   }
+
+   .shipping__accept {
+      max-width: 300px;
+   }
+
+   .shipping__methods {
+      display: flex;
+      flex-direction: column;
+      
+   }
+
+   .methods__item {
+      gap: 30px;
+   }
+
+   .methods__radio {
+      flex: 0 0 80px;
+   }
+
+   .shipping__block {
+      font-size: 14px;
+   }
+
+   .shipping__button {
+      padding: 10px 30px;
+   }
+}
+
+@media (max-width: 380px) {
+   .billing__item, .billing__text-area {
+      flex: 0 0 260px;
+   }
+
+   .checkbox__item {
+      max-width: 80%;
+      margin: 0 auto;
+   }
+
+   .shipping__item label {
+      font-size: 12px;
+   }
+
+   .coupon__code {
+      flex: 0 0 280px;
+   }
+}
+
+
