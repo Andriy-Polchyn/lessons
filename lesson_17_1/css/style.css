@@ -1,0 +1,431 @@
+@import url("reset.css");
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #9C9C9C;
+
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.achievement__section {
+   padding-top: 60px;
+   margin-bottom: 100px;
+}
+
+.achievement__title {
+   margin-bottom: 40px;
+}
+
+.achievement__items {
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+}
+
+.item-achievement {
+   display: flex;
+}
+
+.item-achievement__image {
+   flex: 0 0 62%;
+}
+
+.item-achievement__image img {
+   max-width: 100%;
+}
+
+.item-achievement__content {
+   flex: 0 0 38%;
+   padding-left: 120px;
+   align-self: center;
+}
+
+.item-achievement__title {
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 1.4;
+   color: #333333;
+   margin-bottom: 20px;
+}
+
+.projects__section {
+   padding-bottom: 100px;
+}
+
+.projects__content {
+   display: flex;
+   flex-direction: column;
+}
+
+.projects__title {
+   margin-bottom: 40px;
+   align-self: center;
+}
+
+.projects__description {
+   margin-bottom: 60px;
+   align-self: center;
+}
+.projects__image-main {
+   margin-bottom: 94px;
+}
+
+.projects__image-main img {
+   max-width: 100%;
+}
+
+.projects__text {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 82px;
+}
+
+.text__item {
+   flex: 0 0 48.7%;
+   display: flex;
+   flex-direction: column;
+}
+
+.text__title {
+   margin-bottom: 24px;
+}
+
+.text__description:not(:last-child) {
+   margin-bottom: 60px;
+}
+
+.text__description p:not(:last-child){
+   margin-bottom: 30px;
+}
+
+.text__footer {
+   display: flex;
+   gap: 80px;
+}
+
+.projects__image-block:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.block-images {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 32px;
+   margin: 0 -16px;
+}
+
+.block-images__image {
+   flex: 0 0 50%;
+   padding: 0 16px;
+}
+
+.full-image {
+   flex: 0 0 100%;
+}
+
+.block-images__image img {
+   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+   .item-achievement__content {
+      padding-left: 60px;
+   }
+}
+
+@media (max-width: 991.98px) {
+
+   .achievement__section {
+      padding-top: 40px;
+      margin-bottom: 80px;
+   }
+
+   .item-achievement__content {
+      padding-left: 40px;
+   }
+
+   .item-achievement__image {
+      flex: 0 0 60%;
+   }
+
+   .item-achievement__content {
+      flex: 0 0 40%;
+   }
+
+   .item-achievement__title {
+      font-size: 20px;
+      margin-bottom: 15px;
+   }
+
+   .item-achievement__text p {
+      font-size: 14px;
+   }
+
+   .achievement__items {
+      row-gap: 20px;
+   }
+
+   .title-section {
+      font-size: 46px;
+   }
+
+   .projects__title {
+      margin-bottom: 30px;
+   }
+
+   .projects__description {
+      margin-bottom: 40px;
+   }
+
+   .projects__image-main {
+      margin-bottom: 50px;
+   }
+
+   .projects__text {
+      margin-bottom: 50px;
+   }
+
+   .projects__section {
+      padding-bottom: 60px;
+   }
+
+   .title-subsection {
+      font-size: 20px;
+   }
+
+   .text__description p {
+      font-size: 16px;
+   }
+
+   .text__footer {
+      font-size: 16px;
+      gap: 20px;
+   }
+
+   .text__description:not(:last-child) {
+      margin-bottom: 40px;
+   }
+   
+   .text__description p:not(:last-child){
+      margin-bottom: 20px;
+   }
+
+   .block-images {
+      row-gap: 24px;
+      margin: 0 -12px;
+   }
+   
+   .block-images__image {
+      padding: 0 12px;
+   }
+}
+
+@media (max-width: 720px) {
+   
+   .achievement__section {
+      padding-top: 30px;
+      margin-bottom: 60px;
+   }
+
+   .item-achievement__image {
+      flex: 0 0 50%;
+   }
+
+   .item-achievement__content {
+      flex: 0 0 50%;
+   }
+
+   .item-achievement__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+   }
+
+   .item-achievement__text p {
+      font-size: 12px;
+   }
+
+   .achievement__title {
+      margin-bottom: 20px;
+   }
+
+   .title-section {
+      font-size: 38px;
+   }
+
+   .projects__title {
+      margin-bottom: 20px;
+   }
+
+   .projects__description {
+      margin-bottom: 30px;
+      font-size: 16px;
+   }
+
+   .section-description {
+      max-width: 60%;
+   }
+
+   .projects__image-main {
+      margin-bottom: 40px;
+   }
+
+   .projects__text {
+      margin-bottom: 40px;
+   }
+
+   .projects__section {
+      padding-bottom: 50px;
+   }
+
+   .text__title {
+      margin-bottom: 20px;
+   }
+
+   .title-subsection {
+      font-size: 18px;
+   }
+
+   .text__description p {
+      font-size: 14px;
+   }
+
+   .text__footer {
+      font-size: 14px;
+      gap: 20px;
+   }
+
+   .text__description:not(:last-child) {
+      margin-bottom: 20px;
+   }
+   
+   .text__description p:not(:last-child){
+      margin-bottom: 10px;
+   }
+
+   .block-images {
+      row-gap: 20px;
+      margin: 0 -10px;
+   }
+   
+   .block-images__image {
+      padding: 0 10px;
+   }
+}
+
+@media (max-width: 590px) {
+   
+   .achievement__section {
+      padding-top: 20px;
+      margin-bottom: 40px;
+   }
+   
+   .item-achievement {
+      flex-direction: column;
+      row-gap: 10px;
+   }
+
+   .item-achievement__content {
+      padding-left: 20px;
+   }
+
+   .item-achievement__title {
+      margin-bottom: 8px;
+   }
+
+   .title-section {
+      font-size: 26px;
+   }
+
+   .projects__title {
+      margin-bottom: 12px;
+   }
+
+   .projects__description {
+      margin-bottom: 20px;
+      font-size: 14px;
+   }
+
+   .section-description {
+      max-width: 75%;
+   }
+
+   .projects__image-main {
+      margin-bottom: 20px;
+   }
+
+   .projects__text {
+      margin-bottom: 20px;
+   }
+
+   .projects__section {
+      padding-bottom: 35px;
+   }
+
+   .text__title {
+      margin-bottom: 16px;
+   }
+
+   .title-subsection {
+      font-size: 16px;
+   }
+
+   .text__description p {
+      font-size: 14px;
+   }
+
+   .text__footer {
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   .text__description:not(:last-child) {
+      margin-bottom: 16px;
+   }
+   
+   .text__description p:not(:last-child){
+      margin-bottom: 8px;
+   }
+
+   .block-images {
+      row-gap: 15px;
+      margin: 0 -8px;
+   }
+   
+   .block-images__image {
+      padding: 0 8px;
+   }
+}
+
+@media (max-width: 480px) {
+   .projects__text {
+      flex-direction: column;
+   }
+
+   .text__item:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   .text__title {
+      margin-bottom: 12px;
+   }
+   
+   .block-images__image {
+      flex: 0 0 100%;
+   }
+}
